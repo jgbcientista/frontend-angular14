@@ -2,6 +2,10 @@
 
 Build an Angular 14 CRUD App example to consume Rest APIs, display, modify & search data.
 
+cd angular-14-client
+npm install
+ng serve --port 8081
+
 Tutorial Application in that:
 - Each Tutorial has id, title, description, published status.
 - We can create, retrieve, update, delete Tutorials.
