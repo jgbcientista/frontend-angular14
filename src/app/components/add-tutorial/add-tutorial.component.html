@@ -1,35 +1,44 @@
 <div>
-  <div class="submit-form">
-    <div *ngIf="!submitted">
-      <div class="form-group">
-        <label for="title">Título</label>
-        <input
-          type="text"
-          class="form-control"
-          id="title"
-          required
-          [(ngModel)]="tutorial.title"
-          name="title"
-        />
-      </div>
+  <div class="container">
+      <h2 style="text-align: center;">Cadastro de Pessoa</h2>
+       
+      <table class="table table-borderless">
+         
+        <div *ngIf="!submitted">
+          <div class="form-group">
+            <label for="title">Título</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              required
+              [(ngModel)]="tutorial.title"
+              name="title"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="description">Descrição</label>
+            <input
+              class="form-control"
+              id="description"
+              required
+              [(ngModel)]="tutorial.description"
+              name="description"
+            />
+          </div>    
+    
+          <div class="container" style="text-align: center;">  
+            <button type="button" (click)="saveTutorial()" class="btn btn-success">Salvar</button>
+            <button type="button" class="btn btn-warning">Limpar</button>
+          </div>
 
-      <div class="form-group">
-        <label for="description">Descrição</label>
-        <input
-          class="form-control"
-          id="description"
-          required
-          [(ngModel)]="tutorial.description"
-          name="description"
-        />
-      </div>
-
-      <button (click)="saveTutorial()" class="btn btn-success">Salvar</button>
+        </div>
+        <div *ngIf="submitted">
+          <h4>Dados salvo com sucesso!</h4>
+          <button class="btn btn-success" (click)="newTutorial()">Adicionar novo</button>
+        </div>
+      </table>
     </div>
-
-    <div *ngIf="submitted">
-      <h4>Dados salvo com sucesso!</h4>
-      <button class="btn btn-success" (click)="newTutorial()">Adicionar novo</button>
-    </div>
-  </div>
+  
 </div>
