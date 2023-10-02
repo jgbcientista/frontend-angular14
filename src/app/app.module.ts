@@ -6,9 +6,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AddUserComponent } from './components/novo-usuario/add-user.component';
-import { UserDetailComponent } from './components/detalhe-usuario/user-detail.component';
-import { UsersListComponent } from './components/lista-usuario/users-list.component';
+import { AddUserComponent } from './components/usuario/novo-usuario/add-user.component';
+import { UserDetailComponent } from './components/usuario/detalhe-usuario/user-detail.component';
+import { UsersListComponent } from './components/usuario/lista-usuario/users-list.component';
+import { AddInformacaoAuxiliar } from './components/informacao-auxiliar/add-informacao-auxiliar/add-informacao-auxiliar.component';
+import { ListInformacaoAuxiliar } from './components/informacao-auxiliar/list-informacao-auxiliar/list-informacao-auxiliar.component';
+
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { UsersListComponent } from './components/lista-usuario/users-list.compon
     AddUserComponent,
     UserDetailComponent,
     UsersListComponent,
+    AddInformacaoAuxiliar,
+    ListInformacaoAuxiliar,
+    
   ],
   imports: [
     BrowserModule,

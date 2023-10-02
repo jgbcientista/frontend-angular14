@@ -1,7 +1,8 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
-import { UsuarioService } from '../../service/Usuario.service';
+
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { UsuarioService } from 'src/app/service/Usuario.service';
 
 @Component({
   selector: 'app-add-user',

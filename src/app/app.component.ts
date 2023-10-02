@@ -8,8 +8,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
 
-  title = 'Funcionalidade de usuário';
-  
   constructor(private modalService: NgbModal) {
   }
 

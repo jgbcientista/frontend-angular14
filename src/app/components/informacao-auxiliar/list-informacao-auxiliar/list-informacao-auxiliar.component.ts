@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioService } from '../../service/Usuario.service';
+import { UsuarioService } from 'src/app/service/Usuario.service';
 
 @Component({
-  selector: 'app-users-list',
-  templateUrl: './users-list.component.html',
-  styleUrls: ['./users-list.component.scss'],
+  selector: 'app-list-informacao-auxiliar',
+  templateUrl: './list-informacao-auxiliar.component.html',
+  styleUrls: ['./list-informacao-auxiliar.component.scss']
 })
-export class UsersListComponent implements OnInit {
+export class ListInformacaoAuxiliar  implements OnInit {
   Users: any = [];
 
   constructor(private usuarioService: UsuarioService) {}
