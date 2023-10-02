@@ -2,7 +2,7 @@
     <div
       class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
     >
-      <h2 class="h2">Lista de informação auxiliar</h2>
+      <h2 class="h2">Lista de histórico de informação auxiliar</h2>
     </div>
   
     <div class="table-responsive">
@@ -10,6 +10,7 @@
         <thead>
           <tr>
             <th scope="col">ID </th>
+            <th scope="col">ID Informação auxiliar</th>
             <th scope="col">Nome da informação auxiliar</th>
             <th scope="col">Descrição da informação auxiliar</th>
             <th scope="col">Data de criação</th>
@@ -18,21 +19,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let usuario of Users; let i = index">
-            <td>{{ usuario.id }}</td>
-            <th scope="row">{{ usuario.id }}</th>
-            <td>{{ usuario.nome }}</td>
-            <td>{{ usuario.email }}</td>
-            <td>{{ usuario.login }}</td>
-            <td>{{ usuario.login }}</td>
+          <tr *ngFor="let informacao of informacoesAuxiliar; let i = index">
+            <th scope="row">{{ informacao.id }}</th>
+            <td>{{ informacao.nome }}</td>
+            <td>{{ informacao.descricao }}</td>
+            <td>{{ informacao.dataCriacao }}</td>
+            <td>{{ informacao.idUsuario }}</td>
             <td class="text-center">
               <button
                 class="btn btn-sm btn-primary"
-                routerLink="/edit-user/{{ usuario.id }}"
+                routerLink="/edit-informacao-auxiliar/{{ informacao.id }}"
               >
                 Editar
               </button>
-              <button class="btn btn-sm btn-danger" (click)="delete(usuario.id, i)">
+              <button class="btn btn-sm btn-danger" (click)="delete(informacao.id, i)">
                 Remover
               </button>
             </td>
