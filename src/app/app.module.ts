@@ -1,28 +1,31 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
-import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { AddUserComponent } from './components/novo-usuario/add-user.component';
+import { UserDetailComponent } from './components/detalhe-usuario/user-detail.component';
+import { UsersListComponent } from './components/lista-usuario/users-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddTutorialComponent,
-    TutorialDetailsComponent,
-    TutorialsListComponent
+    AddUserComponent,
+    UserDetailComponent,
+    UsersListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HttpClientModule,
     FormsModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
