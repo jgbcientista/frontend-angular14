@@ -11,6 +11,8 @@ import { UserDetailComponent } from './components/usuario/detalhe-usuario/user-d
 import { UsersListComponent } from './components/usuario/lista-usuario/users-list.component';
 import { AddInformacaoAuxiliar } from './components/informacao-auxiliar/add-informacao-auxiliar/add-informacao-auxiliar.component';
 import { ListInformacaoAuxiliar } from './components/informacao-auxiliar/list-informacao-auxiliar/list-informacao-auxiliar.component';
+import { EditInformacaoAuxiliar } from './components/informacao-auxiliar/edit-informacao-auxiliar/edit-informacao-auxiliar.component';
+import { HstInformacaoAuxiliar } from './components/informacao-auxiliar/hst-informacao-auxiliar/hst-informacao-auxiliar.component';
 
 
 
@@ -22,6 +24,8 @@ import { ListInformacaoAuxiliar } from './components/informacao-auxiliar/list-in
     UsersListComponent,
     AddInformacaoAuxiliar,
     ListInformacaoAuxiliar,
+    EditInformacaoAuxiliar,
+    HstInformacaoAuxiliar,
     
   ],
   imports: [

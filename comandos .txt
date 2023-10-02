@@ -1,0 +1,4 @@
+ng g c edit-informacao-auxiliar
+ng g c hst-informacao-auxiliar
+ng g c list-informacao-auxiliar
+ng g c add-informacao-auxiliar
